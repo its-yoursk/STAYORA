@@ -9,7 +9,10 @@ const listingSchema = new Schema({
     description: String,
     image: {
         type: String,
+        default: 
+            "https://unsplash.com/photos/tree-with-yellow-blossoms-IDDlWIQ9gDM",
         set: (v) =>
+            //ternary operator 
             v ===""
                 ? "https://unsplash.com/photos/tree-with-yellow-blossoms-IDDlWIQ9gDM"
                 : v,
@@ -20,4 +23,4 @@ const listingSchema = new Schema({
 });
 
 const Listing = mongoose.model("Listing", listingSchema);
-module.export=Listing;
+module.exports=Listing;
