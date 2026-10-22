@@ -98,3 +98,15 @@ body {
     background-color: #fe424d;
     border: none !important;
 }
+
+/* Edit Page */
+.btn.edit-btn {
+    background-color: #fe424d;
+    color: white;
+    border: none;
+}
+
+.btn.edit-btn:hover {
+    background-color: #e63946;
+    color: white;
+}
